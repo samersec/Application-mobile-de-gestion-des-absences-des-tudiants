@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/ChoiceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Choisissez votre type d'utilisateur"
+        android:textSize="24sp"
+        android:textColor="#6d77fb"/>
+
+
+
+    <Button
+        android:id="@+id/Button_Teacher"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#6d77fb"
+        android:layout_below="@id/ChoiceTitle"
+
+        android:text="Enseignant"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/Button_Student"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6d77fb"
+        android:layout_below="@id/Button_Teacher"
+        android:text="Etudiant"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+
+</RelativeLayout>

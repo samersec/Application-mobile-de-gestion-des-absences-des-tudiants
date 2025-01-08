@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/matiereTextView"
+        android:layout_width="234dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="24sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matiereTextView"
+        android:layout_marginTop="48dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- TableRows seront ajoutés dynamiquement depuis le code Java -->
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/ajouterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HorizontalScroll"
+        android:layout_marginTop="46dp"
+        android:text="Ajouter un étudiant"
+        android:backgroundTint="#6d77fb"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/modifierButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ajouterButton"
+        android:layout_marginTop="10dp"
+        android:text="Modifier"
+        android:backgroundTint="#6d77fb"
+        android:textSize="18sp"/>
+</RelativeLayout>

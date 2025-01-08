@@ -1,0 +1,54 @@
+<!-- res/layout/activity_ajouter_etudiant.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titreAjoutEtudiant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un étudiant"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textColor="#6d77fb"/>
+
+    <EditText
+        android:id="@+id/CIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreAjoutEtudiant"
+        android:layout_marginTop="43dp"
+        android:hint="CIN"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CIN"
+        android:layout_marginTop="25dp"
+        android:hint="Nom"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LastName"
+        android:layout_marginTop="27dp"
+        android:hint="Prénom"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FirstName"
+        android:layout_marginTop="37dp"
+        android:text="Valider"
+        android:backgroundTint="#6d77fb"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

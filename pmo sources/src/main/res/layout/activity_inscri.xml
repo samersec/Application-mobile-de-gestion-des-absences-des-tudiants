@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulaire Enseignant"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textColor="#6d77fb"/>
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        android:layout_below="@id/LastName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/Mat"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/Mat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matière(s)"
+        android:layout_below="@id/FirstName"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:layout_below="@id/Email"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soumettre"
+        android:layout_below="@id/Password"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#6d77fb"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
